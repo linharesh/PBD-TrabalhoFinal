@@ -1,3 +1,10 @@
+/*
+Stored Procedure SP3
+Ao chamar este procedure e passar como parametro o id de um voo, 
+todos os passageiros que possuem passagem neste voo terão seu número de milhas acumuladas atualizado.
+*/
+
+
 USE `trabalhofinal`;
 DROP procedure IF EXISTS `SP3_atribui_milhas`;
 
