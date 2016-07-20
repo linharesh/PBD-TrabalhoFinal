@@ -67,8 +67,8 @@ INSERT INTO `trabalhofinal`.`Mecanico` (`idFuncionario`, `CodLicenca`) VALUES (3
 INSERT INTO `trabalhofinal`.`Administrativo` (`idFuncionario`, `cargo`) VALUES (4, 'Gestor');
 
 -- Piloto
-INSERT INTO `trabalhofinal`.`Piloto` (`idFuncionario`, `CHT`, `horasDeVoo`) VALUES (5, '9407450065', 100);
-INSERT INTO `trabalhofinal`.`Piloto` (`idFuncionario`, `CHT`, `horasDeVoo`) VALUES (6, '3735880498', 250);
+INSERT INTO `trabalhofinal`.`Piloto` (`idFuncionario`, `CHT`, `tempoDeVoo`) VALUES (5, '9407450065', '00:00:00');
+INSERT INTO `trabalhofinal`.`Piloto` (`idFuncionario`, `CHT`, `tempoDeVoo`) VALUES (6, '3735880498', '00:00:00');
 
 -- Status do voo
 INSERT INTO `trabalhofinal`.`StatusDoVoo` (`idStatusDoVoo`, `status`) VALUES (1, 'Agendado');
@@ -157,37 +157,37 @@ INSERT INTO `trabalhofinal`.`LinhaAerea` (`idLinhaAerea`, `id_Aeroporto_Origem`,
 
 
 -- Aeronaves
-INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `horasDeVoo`) VALUES (1, '#b01361', 5, 12, '1992-2-9', 1056);
-INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `horasDeVoo`) VALUES (2, '#b9c3c1', 4, 4, '1999-8-16', 1017);
-INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `horasDeVoo`) VALUES (3, '#10c056', 4, 3, '2004-9-19', 1132);
-INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `horasDeVoo`) VALUES (4, '#da57f9', 2, 6, '1994-5-25', 1006);
-INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `horasDeVoo`) VALUES (5, '#620c75', 4, 8, '1989-8-2', 1061);
-INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `horasDeVoo`) VALUES (6, '#7d496f', 4, 11, '1987-1-12', 2401);
-INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `horasDeVoo`) VALUES (7, '#18a7b0', 2, 12, '1987-5-22', 2602);
-INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `horasDeVoo`) VALUES (8, '#e131df', 3, 11, '2003-7-3', 2445);
-INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `horasDeVoo`) VALUES (9, '#f39518', 4, 3, '2002-1-14', 398);
-INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `horasDeVoo`) VALUES (10, '#b6e0e1', 5, 6, '2005-3-12', 3127);
-INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `horasDeVoo`) VALUES (11, '#3a31f5', 2, 10, '1992-9-14', 1081);
-INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `horasDeVoo`) VALUES (12, '#a6e793', 2, 1, '1987-2-9', 2067);
-INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `horasDeVoo`) VALUES (13, '#371756', 3, 2, '1980-12-10', 110);
-INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `horasDeVoo`) VALUES (14, '#2ddac2', 5, 11, '1998-11-6', 1045);
-INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `horasDeVoo`) VALUES (15, '#f0fede', 1, 12, '1980-2-12', 1694);
-INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `horasDeVoo`) VALUES (16, '#3e4874', 4, 11, '1979-9-14', 2852);
-INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `horasDeVoo`) VALUES (17, '#553b0d', 4, 10, '1995-11-12', 3462);
-INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `horasDeVoo`) VALUES (18, '#244ed6', 2, 3, '2006-2-21', 873);
-INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `horasDeVoo`) VALUES (19, '#fd36ef', 4, 12, '1981-6-5', 2047);
-INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `horasDeVoo`) VALUES (20, '#b5b085', 4, 8, '1997-2-22', 1063);
-INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `horasDeVoo`) VALUES (21, '#8889d7', 4, 9, '2003-8-20', 3827);
-INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `horasDeVoo`) VALUES (22, '#cc3a6d', 1, 8, '1983-5-7', 2222);
-INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `horasDeVoo`) VALUES (23, '#2fe6a1', 5, 1, '1993-9-12', 3223);
-INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `horasDeVoo`) VALUES (24, '#08be83', 2, 3, '2015-1-10', 2876);
-INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `horasDeVoo`) VALUES (25, '#001a3f', 1, 10, '1984-3-6', 291);
-INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `horasDeVoo`) VALUES (26, '#933802', 4, 1, '1988-8-14', 2719);
-INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `horasDeVoo`) VALUES (27, '#fb44c3', 4, 1, '1995-6-4', 2813);
-INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `horasDeVoo`) VALUES (28, '#42c642', 3, 9, '2008-5-10', 1702);
-INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `horasDeVoo`) VALUES (29, '#80ee15', 5, 10, '1997-5-18', 220);
-INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `horasDeVoo`) VALUES (30, '#045c46', 4, 3, '2008-7-27', 1609);
-INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `horasDeVoo`) VALUES (31, '#cf048d', 5, 2, '1995-5-4', 651);
+INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `tempoDeVoo`) VALUES (1, '#b01361', 5, 12, '1992-2-9', '00:00:00');
+INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `tempoDeVoo`) VALUES (2, '#b9c3c1', 4, 4, '1999-8-16', '00:00:00');
+INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `tempoDeVoo`) VALUES (3, '#10c056', 4, 3, '2004-9-19', '00:00:00');
+INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `tempoDeVoo`) VALUES (4, '#da57f9', 2, 6, '1994-5-25', '00:00:00');
+INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `tempoDeVoo`) VALUES (5, '#620c75', 4, 8, '1989-8-2', '00:00:00');
+INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `tempoDeVoo`) VALUES (6, '#7d496f', 4, 11, '1987-1-12', '00:00:00');
+INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `tempoDeVoo`) VALUES (7, '#18a7b0', 2, 12, '1987-5-22', '00:00:00');
+INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `tempoDeVoo`) VALUES (8, '#e131df', 3, 11, '2003-7-3', '00:00:00');
+INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `tempoDeVoo`) VALUES (9, '#f39518', 4, 3, '2002-1-14', '00:00:00');
+INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `tempoDeVoo`) VALUES (10, '#b6e0e1', 5, 6, '2005-3-12', '00:00:00');
+INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `tempoDeVoo`) VALUES (11, '#3a31f5', 2, 10, '1992-9-14', '00:00:00');
+INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `tempoDeVoo`) VALUES (12, '#a6e793', 2, 1, '1987-2-9', '00:00:00');
+INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `tempoDeVoo`) VALUES (13, '#371756', 3, 2, '1980-12-10', '00:00:00');
+INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `tempoDeVoo`) VALUES (14, '#2ddac2', 5, 11, '1998-11-6', '00:00:00');
+INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `tempoDeVoo`) VALUES (15, '#f0fede', 1, 12, '1980-2-12', '00:00:00');
+INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `tempoDeVoo`) VALUES (16, '#3e4874', 4, 11, '1979-9-14', '00:00:00');
+INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `tempoDeVoo`) VALUES (17, '#553b0d', 4, 10, '1995-11-12', '00:00:00');
+INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `tempoDeVoo`) VALUES (18, '#244ed6', 2, 3, '2006-2-21', '00:00:00');
+INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `tempoDeVoo`) VALUES (19, '#fd36ef', 4, 12, '1981-6-5', '00:00:00');
+INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `tempoDeVoo`) VALUES (20, '#b5b085', 4, 8, '1997-2-22', '00:00:00');
+INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `tempoDeVoo`) VALUES (21, '#8889d7', 4, 9, '2003-8-20', '00:00:00');
+INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `tempoDeVoo`) VALUES (22, '#cc3a6d', 1, 8, '1983-5-7', '00:00:00');
+INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `tempoDeVoo`) VALUES (23, '#2fe6a1', 5, 1, '1993-9-12', '00:00:00');
+INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `tempoDeVoo`) VALUES (24, '#08be83', 2, 3, '2015-1-10', '00:00:00');
+INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `tempoDeVoo`) VALUES (25, '#001a3f', 1, 10, '1984-3-6', '00:00:00');
+INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `tempoDeVoo`) VALUES (26, '#933802', 4, 1, '1988-8-14', '00:00:00');
+INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `tempoDeVoo`) VALUES (27, '#fb44c3', 4, 1, '1995-6-4', '00:00:00');
+INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `tempoDeVoo`) VALUES (28, '#42c642', 3, 9, '2008-5-10', '00:00:00');
+INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `tempoDeVoo`) VALUES (29, '#80ee15', 5, 10, '1997-5-18', '00:00:00');
+INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `tempoDeVoo`) VALUES (30, '#045c46', 4, 3, '2008-7-27', '00:00:00');
+INSERT INTO `trabalhofinal`.`Aeronave` (`idAeronave`, `matricula`, `idEmpresaDeAviacao`, `idModeloDeAeronave`, `dataDeFabricacao`, `tempoDeVoo`) VALUES (31, '#cf048d', 5, 2, '1995-5-4', '00:00:00');
 
 
 
