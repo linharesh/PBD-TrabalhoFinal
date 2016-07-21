@@ -14,4 +14,5 @@ Passageiro
 JOIN Passaporte on Passageiro.idPassageiro = Passaporte.idPassageiro
 JOIN Pais on Passaporte.idPais = Pais.idPais
 JOIN Passagem on Passagem.idPassageiro = Passageiro.idPassageiro
-JOIN CartaoDeEmbarque on Passagem.idPassagem = CartaoDeEmbarque.idPassagem;
+JOIN CartaoDeEmbarque on Passagem.idPassagem = CartaoDeEmbarque.idPassagem
+ORDER BY Passageiro.idade;

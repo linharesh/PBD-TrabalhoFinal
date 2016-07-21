@@ -13,4 +13,5 @@ FROM Aeronave
 JOIN autorizacaoparavoar ON Aeronave.idAeronave = autorizacaoparavoar.idAeronave
 JOIN modelodeaeronave ON Aeronave.idModeloDeAeronave = modelodeaeronave.idModeloDeAeronave
 JOIN fabricantedaaeronave ON fabricantedaaeronave.idFabricanteDaAeronave = modelodeaeronave.idFabricante
-JOIN empresadeaviacao ON Aeronave.idEmpresaDeAviacao = empresadeaviacao.idEmpresaDeAviacao;
+JOIN empresadeaviacao ON Aeronave.idEmpresaDeAviacao = empresadeaviacao.idEmpresaDeAviacao
+order by Aeronave.dataDeFabricacao;

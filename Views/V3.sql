@@ -8,4 +8,5 @@ Pais.nome as Pais_nome
 from Aeroporto
 join Cidade on Aeroporto.idCidade = Cidade.idCidade
 join Estado on Cidade.idEstado = Estado.idEstado
-join Pais on Estado.idPais = Pais.idPais;
+join Pais on Estado.idPais = Pais.idPais
+ORDER BY Aeroporto.sigla;
