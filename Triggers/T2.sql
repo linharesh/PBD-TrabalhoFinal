@@ -1,3 +1,11 @@
+/*
+Trigger T2
+Ao tentar inserir um funcionario na tabela de terceirizado,
+verificar se este funcionario não está inserido em Comissario, Mecanico, Piloto ou Administrativo
+Caso esteja, abortar inserção.
+*/
+
+
 USE `trabalhofinal`;
 
 DELIMITER $$

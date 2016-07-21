@@ -1,3 +1,10 @@
+/*
+Trigger T4
+Ao tentar inserir um funcionario na tabela de piloto,
+verificar se este funcionario não está inserido em Comissario, Mecanico, Terceirizado ou Administrativo
+Caso esteja, abortar inserção.
+*/
+
 USE `trabalhofinal`;
 
 DELIMITER $$

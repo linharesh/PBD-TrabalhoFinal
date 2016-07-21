@@ -1,3 +1,10 @@
+/*
+Trigger T6
+Ao tentar inserir um funcionario na tabela de administrativo,
+verificar se este funcionario não está inserido em Comissario, Mecanico, Piloto ou Terceirizado
+Caso esteja, abortar inserção.
+*/
+
 USE `trabalhofinal`;
 
 DELIMITER $$
