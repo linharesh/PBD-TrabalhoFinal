@@ -2,14 +2,14 @@ USE `trabalhofinal`;
 
 DELIMITER $$
 
-DROP TRIGGER IF EXISTS trabalhofinal.comissario_BEFORE_INSERT$$
+DROP TRIGGER IF EXISTS trabalhofinal.terceirizado_BEFORE_INSERT$$
 USE `trabalhofinal`$$
-CREATE DEFINER = CURRENT_USER TRIGGER `trabalhofinal`.`comissario_BEFORE_INSERT` BEFORE INSERT ON `comissario` FOR EACH ROW
+CREATE DEFINER=`root`@`localhost` TRIGGER `trabalhofinal`.`terceirizado_BEFORE_INSERT` BEFORE INSERT ON `terceirizado` FOR EACH ROW
 BEGIN
 DECLARE num INT;
 select count(*) from (
-	select Funcionario.idFuncionario from Funcionario join Terceirizado 
-	on Funcionario.idFuncionario = Terceirizado.idFuncionario
+	select Funcionario.idFuncionario from Funcionario join Comissario 
+	on Funcionario.idFuncionario = Comissario.idFuncionario
 	union 
 	select Funcionario.idFuncionario  from Funcionario join Mecanico 
 	on Funcionario.idFuncionario = Mecanico.idFuncionario
