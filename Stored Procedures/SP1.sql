@@ -22,7 +22,7 @@ select horario_saida,horario_chegada from Voo where Voo.idVoo = id_voo_param INT
 
 update Aeronave 
 	join Voo on Voo.idAeronave = Aeronave.idAeronave
-set Aeronave.tempoDeVoo = Aeronave.tempoDeVoo + timediff(hora_fim,hora_inicio)
+set Aeronave.tempoDeVoo = Aeronave.tempoDeVoo + (timediff(hora_fim,hora_inicio))
 where Voo.idVoo = id_voo_param;
 SET SQL_SAFE_UPDATES = 1;
 

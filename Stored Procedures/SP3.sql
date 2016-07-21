@@ -25,8 +25,6 @@ set MilhasAcumuladas.numeroDeMilhas = MilhasAcumuladas.numeroDeMilhas + milhas_c
 where Voo.idVoo = id_voo_param;
 SET SQL_SAFE_UPDATES = 1;
 
-select 'Milhas atribuidas com sucesso';
-
 END$$
 
 DELIMITER ;

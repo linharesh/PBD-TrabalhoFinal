@@ -6,11 +6,11 @@ de embarque respectivo à passagem.
 */
 
 USE `trabalhofinal`;
-DROP procedure IF EXISTS `cria_cartao_embarque`;
+DROP procedure IF EXISTS `SP4_cria_cartao_embarque`;
 
 DELIMITER $$
 USE `trabalhofinal`$$
-CREATE DEFINER=`root`@`localhost` PROCEDURE `cria_cartao_embarque`(id_passagem Int)
+CREATE DEFINER=`root`@`localhost` PROCEDURE `SP4_cria_cartao_embarque`(id_passagem Int)
 BEGIN
 
 DECLARE num INT;

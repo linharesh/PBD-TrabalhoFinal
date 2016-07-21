@@ -327,7 +327,7 @@ INSERT INTO `trabalhofinal`.`Passaporte` (`idPassaporte`, `codigoPassaporte`, `i
 
 -- Voo
 INSERT INTO `trabalhofinal`.`Voo` (`idVoo`, `idLinhaAerea`, `data`, `horario_saida`, `horario_chegada`, `idAeronave`, `milhasConcedidas`, `idStatusDoVoo`) VALUES (1, 1, '2016-12-02', '14:00:00', '15:00:00', 2, 35, 1);
-INSERT INTO `trabalhofinal`.`Voo` (`idVoo`, `idLinhaAerea`, `data`, `horario_saida`, `horario_chegada`, `idAeronave`, `milhasConcedidas`, `idStatusDoVoo`) VALUES (2, 12, '2017-12-02', '09:00:00', '10:35:00', 3, 50, 1);
+INSERT INTO `trabalhofinal`.`Voo` (`idVoo`, `idLinhaAerea`, `data`, `horario_saida`, `horario_chegada`, `idAeronave`, `milhasConcedidas`, `idStatusDoVoo`) VALUES (2, 12, '2017-12-02', '09:00:00', '11:10:00', 3, 50, 1);
 INSERT INTO `trabalhofinal`.`Voo` (`idVoo`, `idLinhaAerea`, `data`, `horario_saida`, `horario_chegada`, `idAeronave`, `milhasConcedidas`, `idStatusDoVoo`) VALUES (3, 17, '2014-12-02', '12:00:00', '15:20:00', 4, 110, 1);
 INSERT INTO `trabalhofinal`.`Voo` (`idVoo`, `idLinhaAerea`, `data`, `horario_saida`, `horario_chegada`, `idAeronave`, `milhasConcedidas`, `idStatusDoVoo`) VALUES (4, 3, '2016-07-02', '14:00:00', '15:00:00', 2, 35, 1);
 

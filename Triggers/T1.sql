@@ -13,11 +13,10 @@ DROP TRIGGER IF EXISTS trabalhofinal.voo_BEFORE_UPDATE$$
 USE `trabalhofinal`$$
 CREATE DEFINER=`root`@`localhost` TRIGGER `trabalhofinal`.`voo_BEFORE_UPDATE` BEFORE UPDATE ON `voo` FOR EACH ROW
 BEGIN
-
 if (new.idStatusDoVoo=7) then
-	/* Apagar esse update! */
-	update Voo set voo.idVoo = 0 where voo.idVoo = 9898989898;
-    /* Chamar os procedures SP1, SP2 e SP3 ! */
+	 CALL `trabalhofinal`.`SP1_atualiza_horas_aeronave`(new.idVoo);
+	CALL `trabalhofinal`.`SP2_atualiza_horas_piloto`(new.idVoo);
+	CALL `trabalhofinal`.`SP3_atribui_milhas`(new.idVoo);
 end if;
 
 END$$
