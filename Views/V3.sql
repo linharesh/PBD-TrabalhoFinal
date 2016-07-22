@@ -1,3 +1,8 @@
+/*
+View V3
+Lista todos as siglas dos aeroportos, seguidos por sua respectiva cidade, estado e país.
+*/
+
 USE `trabalhofinal`;
 CREATE  OR REPLACE VIEW `localidades_aeroportos` AS
 select 

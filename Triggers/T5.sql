@@ -1,5 +1,5 @@
 /*
-Trigger T4
+Trigger T5
 Ao tentar inserir um funcionario na tabela de piloto,
 verificar se este funcionario não está inserido em Comissario, Mecanico, Terceirizado ou Administrativo
 Caso esteja, abortar inserção.

@@ -1,5 +1,5 @@
 /*
-SP6
+Stored Procedure SP6
 Atualiza o campo Idade da tabela Passageiros.
 O valor correto da idade do passageiro será calculado com base na diferença entre o ano
 em que o passageiro nasceu e o ano atual.
